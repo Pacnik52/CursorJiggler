@@ -25,7 +25,8 @@ def background_task():
     while True:
         time.sleep(WAIT_TIME)
         x, y = pyautogui.position()
-        pyautogui.moveTo(x + 1, y)
+        pyautogui.moveTo(x + 5, y)
+        pyautogui.moveTo(x - 5, y)
         last_activity = time.time()
 
 def after_click(icon, query):
